@@ -6,10 +6,4 @@ MyCitySearch
 <div style="font-family: Calibri; font-size: 11.0pt; margin: 0in;">
 <a href="https://github.com/sdruckerfig/IntroToSenchaArchitect">https://github.com/sdruckerfig/IntroToSenchaArchitect</a></div>
 <br />
-http://api.yelp.com/business_review_search?ywsid=6djP8TRGT_8JrGgJOsdwYQ&amp;term=hotels&amp;location=Raleigh NC<br />
-<br />
-Restaurants Store URL:<br />
-http://api.yelp.com/business_review_search?ywsid=6djP8TRGT_8JrGgJOsdwYQ&amp;term=eat&amp;location=Raleigh NC<br />
-<br />
-Shops Store URL:<br />
-http://api.yelp.com/business_review_search?ywsid=6djP8TRGT_8JrGgJOsdwYQ&amp;term=shops&amp;location=Raleigh NC
+http://training.figleaf.com/tutorials/toc_senchacomplete.cfm
