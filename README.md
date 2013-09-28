@@ -7,7 +7,6 @@ MyCitySearch
 <a href="https://github.com/sdruckerfig/IntroToSenchaArchitect">https://github.com/sdruckerfig/IntroToSenchaArchitect</a></div>
 <br />
 http://api.yelp.com/business_review_search?ywsid=[Insert Yelp Key here]&amp;term=hotels&amp;location=Raleigh NC<br />
-6djP8TRGT_8JrGgJOsdwYQ<br />
 <br />
 Restaurants Store URL:<br />
 http://api.yelp.com/business_review_search?ywsid=[Insert Yelp Key here]&amp;term=eat&amp;location=Raleigh NC<br />
