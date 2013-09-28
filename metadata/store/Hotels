@@ -1,0 +1,43 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Business",
+        "storeId": "hotelId",
+        "designer|userClassName": "Hotels"
+    },
+    "designerId": "746971f3-d092-49f1-a1a9-ce3d2a244276",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://api.yelp.com/business_review_search?ywsid=6djP8TRGT_8JrGgJOsdwYQ&term=hotels&location=Raleigh NC"
+            },
+            "designerId": "48b9e561-f25a-4204-b40d-e668b397f2a1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "businesses"
+                    },
+                    "designerId": "20b40df6-53e6-493e-9580-9dbaa37e79c7"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "name": "MyCitySearch",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "urlPrefix": "httP;//localhost/CitySearch",
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "52ad6673-d899-426d-84b5-863b3ee5ade5": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "746971f3-d092-49f1-a1a9-ce3d2a244276": {
+            "paths": [
+                "metadata/store/Hotels",
+                "app/store/override/Hotels.js",
+                "app/store/Hotels.js"
+            ],
+            "className": "Hotels"
+        },
+        "1dcaa9a1-2a77-4bec-a9b0-a743f790bcf3": {
+            "paths": [
+                "metadata/store/Resturants",
+                "app/store/override/Resturants.js",
+                "app/store/Resturants.js"
+            ],
+            "className": "Resturants"
+        },
+        "b34a654c-fcfc-4861-9b9a-d4d2f92f578b": {
+            "paths": [
+                "metadata/store/Shops",
+                "app/store/override/Shops.js",
+                "app/store/Shops.js"
+            ],
+            "className": "Shops"
+        },
+        "19233628-af5e-483f-ae3c-81d74df57618": {
+            "paths": [
+                "metadata/model/Business",
+                "app/model/override/Business.js",
+                "app/model/Business.js"
+            ],
+            "className": "Business"
+        },
+        "2ccd9eca-f6ee-429f-9ad3-17ee5f81a79d": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js"
+            ],
+            "className": "Main"
+        },
+        "c72b4be2-e05d-4743-8ede-8d126a8c41de": {
+            "paths": [
+                "metadata/view/BusinessList",
+                "app/view/override/BusinessList.js",
+                "app/view/BusinessList.js"
+            ],
+            "className": "BusinessList"
+        },
+        "1a6fc751-a43a-4d6f-a1dc-9c287b6860b4": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "2ccd9eca-f6ee-429f-9ad3-17ee5f81a79d",
+            "c72b4be2-e05d-4743-8ede-8d126a8c41de"
+        ],
+        "store": [
+            "746971f3-d092-49f1-a1a9-ce3d2a244276",
+            "1dcaa9a1-2a77-4bec-a9b0-a743f790bcf3",
+            "b34a654c-fcfc-4861-9b9a-d4d2f92f578b"
+        ],
+        "controller": [
+            "1a6fc751-a43a-4d6f-a1dc-9c287b6860b4"
+        ],
+        "model": [
+            "19233628-af5e-483f-ae3c-81d74df57618"
+        ],
+        "resource": [
+            "52ad6673-d899-426d-84b5-863b3ee5ade5"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

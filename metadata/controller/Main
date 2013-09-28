@@ -1,0 +1,112 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main"
+    },
+    "designerId": "1a6fc751-a43a-4d6f-a1dc-9c287b6860b4",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "filterfield",
+                "selector": "#searchfield"
+            },
+            "designerId": "aab82602-5672-4991-b4d5-f4b70a094551"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSearchFieldKeyup",
+                "implHandler": [
+                    "\r",
+                    "    if (e.event.keyCode == 13) {\r",
+                    "            this.onSearch(textfield.getValue());\r",
+                    "        }"
+                ],
+                "name": "keyup",
+                "designer|targetType": "Ext.field.Search",
+                "designer|controlQuery": "searchfield#searchField"
+            },
+            "designerId": "fdc0be93-f858-4ebc-b26c-6bc3e1849fc9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSearchFieldChange",
+                "implHandler": [
+                    "this.onSearch(newValue);"
+                ],
+                "name": "change",
+                "designer|targetType": "Ext.field.Search",
+                "designer|controlQuery": "searchfield#searchField"
+            },
+            "designerId": "a2500f6d-665e-4b22-9e15-794248edeb36"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSearch",
+                "designer|params": [
+                    "searchterm"
+                ],
+                "implHandler": [
+                    "var baseUrl = \"http://api.yelp.com/business_review_search?ywsid=6djP8TRGT_8JrGgJOsdwYQ\";\r",
+                    "\r",
+                    "        var stores = [\r",
+                    "        {\r",
+                    "            store: Ext.getStore('hotelId'),\r",
+                    "            url: baseUrl + '&term=hotels' \r",
+                    "        },\r",
+                    "        {\r",
+                    "            store: Ext.getStore('restId'),\r",
+                    "            url: baseUrl + '&term=restaurants'\r",
+                    "        }, \r",
+                    "        {\r",
+                    "            store: Ext.getStore('shopId'),\r",
+                    "            url: baseUrl + '&term=shops'\r",
+                    "        }\r",
+                    "        ];\r",
+                    "\r",
+                    "        for (var i=0; i<stores.length; i++) {\r",
+                    "            stores[i].store.setProxy({\r",
+                    "                type: 'jsonp',\r",
+                    "                url: stores[i].url + '&location=' + searchterm,\r",
+                    "                reader: {\r",
+                    "                    type: 'json',\r",
+                    "                    rootProperty: 'businesses'\r",
+                    "                }\r",
+                    "            });\r",
+                    "            stores[i].store.load();\r",
+                    "        }\r",
+                    "    "
+                ]
+            },
+            "designerId": "605dec1d-82ab-44d1-8b40-cff9f5add7e3"
+        }
+    ]
+}

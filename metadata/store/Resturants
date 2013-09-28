@@ -1,0 +1,43 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Business",
+        "storeId": "restId",
+        "designer|userClassName": "Resturants"
+    },
+    "designerId": "1dcaa9a1-2a77-4bec-a9b0-a743f790bcf3",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://api.yelp.com/business_review_search?ywsid=6djP8TRGT_8JrGgJOsdwYQ&term=eat&location=Raleigh NC"
+            },
+            "designerId": "c5a49f0b-0acb-426e-b29f-ba5bba19b846",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "businesses"
+                    },
+                    "designerId": "d9071626-ac06-48c3-8c66-cdb471867585"
+                }
+            ]
+        }
+    ]
+}

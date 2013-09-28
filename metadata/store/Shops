@@ -1,0 +1,43 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Business",
+        "storeId": "shopId",
+        "designer|userClassName": "Shops"
+    },
+    "designerId": "b34a654c-fcfc-4861-9b9a-d4d2f92f578b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://api.yelp.com/business_review_search?ywsid=6djP8TRGT_8JrGgJOsdwYQ&term=shops&location=Raleigh NC"
+            },
+            "designerId": "593786c4-bdee-410b-8850-bebfdb7446ff",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "businesses"
+                    },
+                    "designerId": "c959fe49-b14c-4965-a0e6-87c2d192b374"
+                }
+            ]
+        }
+    ]
+}

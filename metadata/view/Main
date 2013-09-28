@@ -1,0 +1,117 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "flip",
+        "designer|userClassName": "Main",
+        "designer|initialView": true
+    },
+    "designerId": "2ccd9eca-f6ee-429f-9ad3-17ee5f81a79d",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Hotels",
+                "iconCls": "home"
+            },
+            "designerId": "f0737db7-5f58-4428-a488-1e319ca80c40",
+            "masterInstanceId": "c72b4be2-e05d-4743-8ede-8d126a8c41de"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "a7fc4952-7421-43ab-84bd-826f637bb472"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "store": "restId",
+                "title": "Restuarants",
+                "iconCls": "favorites"
+            },
+            "designerId": "58ca967a-0f53-49e4-9ef2-ab94268fba1a",
+            "masterInstanceId": "c72b4be2-e05d-4743-8ede-8d126a8c41de"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "store": "shopId",
+                "title": "Shops",
+                "iconCls": "team"
+            },
+            "designerId": "e09daf2d-8bb2-47ad-8958-5f208f842569",
+            "masterInstanceId": "c72b4be2-e05d-4743-8ede-8d126a8c41de"
+        },
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "CitySearch"
+            },
+            "designerId": "a804c079-ceeb-4960-8c69-11451b74d49f"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "top"
+            },
+            "designerId": "7b772911-2dd1-4a59-ad03-4f11e2a8801f",
+            "cn": [
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "searchField",
+                        "label": "",
+                        "value": [
+                            "Raleigh NC"
+                        ],
+                        "placeHolder": "Search"
+                    },
+                    "designerId": "75f559e7-9815-4395-8d63-ac74b34936e0"
+                }
+            ]
+        }
+    ]
+}
